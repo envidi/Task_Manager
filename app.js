@@ -6,7 +6,7 @@ const ErrorHandleMiddleware = require('./middlewares/error-handler.js')
 const port = 3000
 const connectDB = require('./db/connect.js')
 require('dotenv').config()
-app.use(express.static('./public'));
+app.use(express.static('./Task_Manager'));
 app.use(express.json())
 
 app.get("/", function(req, res){
